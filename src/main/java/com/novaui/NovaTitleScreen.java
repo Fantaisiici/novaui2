@@ -1,6 +1,5 @@
 package com.novaui;
 
-import net.minecraft.Util;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.Renderable;
@@ -52,7 +51,7 @@ public class NovaTitleScreen extends Screen {
 
 	@Override
 	public void extractRenderState(GuiGraphicsExtractor g, int mouseX, int mouseY, float delta) {
-		long now = Util.getMillis();
+		long now = long now = System.currentTimeMillis();;
 
 		// --- fond : dégradé + orbes lumineux + étoiles
 		g.fillGradient(0, 0, this.width, this.height, Theme.BG_TOP, Theme.BG_BOTTOM);
