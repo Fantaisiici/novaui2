@@ -51,7 +51,7 @@ public class NovaTitleScreen extends Screen {
 
 	@Override
 	public void extractRenderState(GuiGraphicsExtractor g, int mouseX, int mouseY, float delta) {
-		long now = long now = System.currentTimeMillis();;
+		long now = System.currentTimeMillis();;
 
 		// --- fond : dégradé + orbes lumineux + étoiles
 		g.fillGradient(0, 0, this.width, this.height, Theme.BG_TOP, Theme.BG_BOTTOM);
