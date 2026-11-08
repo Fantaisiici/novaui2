@@ -3,7 +3,6 @@ package com.novaui;
 import net.fabricmc.fabric.api.client.rendering.v1.hud.HudElement;
 import net.fabricmc.fabric.api.client.rendering.v1.hud.HudElementRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.hud.VanillaHudElements;
-import net.minecraft.Util;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
@@ -55,7 +54,7 @@ public final class NovaHud {
 		int sh = mc.getWindow().getGuiScaledHeight();
 		int x0 = (sw - ROW_W) / 2;
 		int y0 = sh - 38;
-		long now = Util.getMillis();
+		long now = System.currentTimeMillis();
 
 		// --- fond flottant de la barre d'objets
 		Theme.panel(g, x0 - 5, y0 - 5, ROW_W + 10, SLOT + 10, Theme.PANEL, Theme.BORDER);
